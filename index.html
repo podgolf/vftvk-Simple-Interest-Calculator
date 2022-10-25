@@ -6,7 +6,7 @@
     </head>
     <title>Simple Interest Calculator</title>
     <div class="maindiv">
-        <h1>Simple Interest Calculator</h1><br/>
+        <h1>Simple and Compound Interest Calculator</h1><br/>
         <div class="secdiv">
         Amount &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" onchange="checkno()"  id="principal">  <br><br/>
         Interest Rate &nbsp<input type="range" onchange="updateRate()" id="rate" min=1 max=20 step=.25 value=10.25>
@@ -24,6 +24,13 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
+            <!-- fill in the rest of the values-->
+        </select> <br><br/>
+        How often compounded? &nbsp&nbsp<select id="times">
+            <option value="1">Annually</option>
+            <option value="2">Semi-annually</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
             <!-- fill in the rest of the values-->
         </select> <br><br/>
         <button onclick="compute()">Compute Interest</button><br><br/>
